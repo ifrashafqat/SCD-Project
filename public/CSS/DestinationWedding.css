@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #f5f5dc, #d2b48c, #fffacd); /* Full-page horizontal gradient */
+}
+
+header {
+  background: linear-gradient(to right, #fff5e1, #c6a75e, #ffcc99);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+hr, .hr_1 {
+  border: none;
+  height: 2px;
+  background-color: #4B3D30;
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.full_container {
+  height: 800vh;
+  padding: 65px 20px 20px;
+  background: transparent;
+}
+
+.story {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #a67c00;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Responsive LOGO */
+.logo img {
+  width: 200px;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 130px;
+}
+
+nav a {
+  color: #C71585;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+  background: linear-gradient(to right, #4B3D30, #6F4C3E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a:hover {
+  background: none;
+  color: #e2b285;
+  background-color: #6F4C3E;
+  font-weight: 700;
+  border-radius: 15px;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  border-color: #6F4C3E;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #a67c00;
+  min-width: 150px;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+  margin: 5px 0;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #b5a6a6;
+}
+
+.dest_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1830px;
+  margin: 0 auto;
+}
+
+.dest_container img {
+  width: 90%;
+  max-width: 100%;
+  margin-left: 30px;
+}
+
+.line {
+  width: 30%;
+  height: 1px;
+  background-color: #A77A0D;
+  margin: 10px auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  gap: 20px;
+  background: transparent;
+}
+
+.container h1,
+.container h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button[type="submit"] {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #FF7F50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  text-align: left;
+}
+
+input, select, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+.text-content h1 {
+  font-size: 100px;
+  color: #b59d67;
+}
+
+.text-content h2 {
+  font-size: 24px;
+  color: #6a5d3f;
+  margin-top: 5px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #795835;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.work {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e4c5b8, #c6a75e, #ffcc99);
+  width: 80%;
+  margin-left: 180px;
+  border-radius: 50px;
+}
+
+.footer {
+  background: linear-gradient(to right, #333, #4b3d30, #6a5d3f);
+  color: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  color: #f5a623;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story {
+    font-size: 40px;
+  }
+
+  .work {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 20px;
+  }
+
+  nav li {
+    margin-right: 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, .footer-column {
+    max-width: 90%;
+  }
+
+  .text-content h1 {
+    font-size: 60px;
+  }
+
+  .text-content h2 {
+    font-size: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .dest_container img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .story {
+    font-size: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 40px;
+  }
+
+  .text-content h2 {
+    font-size: 18px;
+  }
+
+  .container, .footer-column {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  button[type="submit"], button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

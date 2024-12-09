@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Page heading style */
+.page-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #a77a0d;
+    padding: 80px;
+    background: linear-gradient(to right, #e3c6a0, #c79f5c);
+    margin-bottom: 20px;
+}
+
+/* Add padding to prevent content from hiding behind the fixed header */
+.full_container {
+    height: 150vh;
+    background-color: #e6b0ff;
+    padding: 65px 20px 20px; /* Adjust top padding to match header height */
+    background: linear-gradient(to right, #f5f5dc, #d2b48c, #fffacd);
+}
+
+/* Container for reviews */
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual review card styling */
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Reviewer image styling */
+.review-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Reviewer name styling */
+.reviewer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a77a0d;
+    margin: 10px 0 5px;
+}
+
+/* Review text styling */
+.review-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+header {
+    background: linear-gradient(to right, #fff5e1, #c6a75e, #ffcc99);
+    padding: 5px; /* Reduced padding for a smaller header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+}
+
+/* NAVIGATION */
+nav {
+    flex-grow: 1; /* Allow the nav to take available space */
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    margin-right: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 130px;
+}
+
+nav a {
+    color: #c71585; /* Text color */
+    text-decoration: none;
+    font-weight: 800; /* Normal font weight */
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid transparent; /* Add a transparent border */
+    transition: border-bottom-color 0.3s ease-in-out; /* Create a smooth transition */
+    background: linear-gradient(to right, #4b3d30, #6f4c3e);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+}
+
+nav a:hover {
+    background: none;
+    color: #e2b285; /* Hover text color */
+    background-color: #6f4c3e; /* Hover background color */
+    text-decoration: none;
+    font-weight: 700; /* Bold font weight on hover */
+    border-radius: 15px;
+    -webkit-background-clip: unset; /* Remove background clip */
+    -webkit-text-fill-color: unset; /* Reset text fill color */
+    border-color: #6f4c3e;
+}
+
+hr {
+    border: none;
+    height: 2px; /* Thickness */
+    background-color: #4b3d30; /* Dark Brown color */
+    width: 80%; /* Width of the line */
+    margin: 50px auto; /* Center it with space above and below */
+    border-radius: 5px; /* Rounded ends */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to parent */
+    background-color: #a67c00; /* Background color of dropdown */
+    min-width: 150px; /* Minimum width for dropdown */
+    z-index: 1; /* Ensure it appears above other content */
+    margin-bottom: 100px;
+}
+
+.story {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #a67c00;
+    text-align: center;
+    font-size: 60px;
+}
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    display: block; /* Display dropdown items block */
+    margin: 5px 0;
+}
+
+.dropdown li a {
+    padding: 10px 15px; /* Add padding to dropdown links */
+    color: white; /* Dropdown link color */
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #b5a6a6; /* Background color on hover for dropdown */
+}
+
+.footer {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Footer section containers */
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* Footer heading */
+.footer-column h3 {
+    font-size: 20px;
+    color: #f5a623;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Footer links */
+.footer-column a {
+    color: #f5f5f5;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #f5a623;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #f5f5f5;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f5a623;
+}
+
+/* Bottom footer text */
+.footer-bottom {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}

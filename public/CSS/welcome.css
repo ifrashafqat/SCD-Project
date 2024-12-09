@@ -1,0 +1,348 @@
+/* General Reset and Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #f5f5dc, #d2b48c, #fffacd);
+}
+
+
+/* Header */
+header {
+  background: linear-gradient(to right, #fff5e1, #c6a75e, #ffcc99);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Container with padding to avoid header overlay */
+.full_container {
+  height: 314vh;
+  padding: 65px 20px 20px;
+  background: linear-gradient(to right, #f5f5dc, #d2b48c, #fffacd);
+}
+
+/* Logo */
+.logo img {
+  width: 100px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-right: 117px;
+}
+
+nav a {
+  color: #C71585;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+  background: linear-gradient(to right, #4B3D30, #6F4C3E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a:hover {
+  color: #e2b285;
+  background-color: #6F4C3E;
+  font-weight: 700;
+  border-radius: 15px;
+  border-color: #6F4C3E;
+}
+
+
+@media (max-width: 768px) {
+  /* Stack navbar items vertically on small screens */
+  nav ul {
+    flex-direction: column;      /* Stack links vertically */
+    align-items: center;
+    width: 100%;                 /* Full width */
+    background-color: #fff5e1;   /* Match header background color */
+    position: absolute;
+    top: 60px;                   /* Position below the header */
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav li {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* Adjust link styles to fit the new layout */
+  nav a {
+    display: block;
+    padding: 15px;               /* Increase padding for a touch-friendly size */
+    width: 100%;                 /* Full width for each link */
+  }
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  animation: slideAnimation 15s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 1;
+  animation: fadeText 1.5s ease-in-out; /* Smooth transition for overlay text */
+}
+
+.text-overlay h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  40% { transform: translateX(-100%); }
+  60% { transform: translateX(-100%); }
+  80% { transform: translateX(-200%); }
+  90% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes fadeText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #4B3D30;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+/* Text and Image Containers */
+.story {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #a67c00;
+  text-align: center;
+  font-size: 60px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1830px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 32%;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo_container img {
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 55px;
+}
+
+.para {
+  font-size: 20px;
+  list-style: circle;
+}
+
+.para_1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #a67c00;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #a67c00;
+  min-width: 150px;
+  z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+  margin: 5px 0;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #b5a6a6;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  color: #f5a623;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #f5a623;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #f5f5f5;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f5a623;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  background-color: #ecdcdc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #777777;
+}

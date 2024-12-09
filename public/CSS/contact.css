@@ -1,0 +1,309 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(to right, #e3c6a0, #c79f5c);
+
+}
+
+/* Page heading */
+.page-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #A77A0D;
+  padding: 20px;
+  background: linear-gradient(to right, #e3c6a0, #c79f5c);
+  margin-bottom: 20px;
+}
+
+/* Contact container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Contact form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #e3c6a0, #c79f5c);
+
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  color: #A77A0D;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #A77A0D;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #b88b3a;
+}
+
+/* Contact info section */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #e3c6a0, #c79f5c);
+
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  color: #A77A0D;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Map placeholder */
+.map-container {
+  width: 100%;
+  height: 300px;
+  background-color: #e3c6a0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+header {
+  background: linear-gradient(to right, #fff5e1, #c6a75e, #ffcc99);
+  padding: 5px; /* Reduced padding for a smaller header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Keep header fixed at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+/* NAVIGATION */
+nav {
+  flex-grow: 1; /* Allow the nav to take available space */
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  margin-right: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 130px;
+}
+
+nav a {
+  color: #C71585; /* Text color */
+  text-decoration: none;
+  font-weight: 800; /* Normal font weight */
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 2px solid transparent; /* Add a transparent border */
+  transition: border-bottom-color 0.3s ease-in-out; /* Create a smooth transition */
+  background: linear-gradient(to right, #4B3D30, #6F4C3E);  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+}
+
+nav a:hover {
+  background: none;
+  color: #e2b285; /* Hover text color */
+  background-color: #6F4C3E; /* Hover background color */
+  text-decoration: none;
+  font-weight: 700; /* Bold font weight on hover */
+  border-radius: 15px;
+  -webkit-background-clip: unset; /* Remove background clip */
+  -webkit-text-fill-color: unset; /* Reset text fill color */
+  border-color: #6F4C3E;
+}
+
+
+hr {
+  border: none;
+  height: 2px; /* Thickness */
+  background-color: #4B3D30; /* Dark Brown color */
+  width: 80%; /* Width of the line */
+  margin: 50px auto; /* Center it with space above and below */
+  border-radius: 5px; /* Rounded ends */
+}
+
+
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it relative to parent */
+  background-color: #a67c00; /* Background color of dropdown */
+  min-width: 150px; /* Minimum width for dropdown */
+  z-index: 1; /* Ensure it appears above other content */
+  margin-bottom: 100px;
+}
+
+
+.story{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #a67c00;
+  text-align: center;
+  font-size: 60px;
+}
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  display: block; /* Display dropdown items block */
+  margin: 5px 0
+}
+
+.dropdown li a {
+  padding: 10px 15px; /* Add padding to dropdown links */
+  color: white; /* Dropdown link color */
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #b5a6a6; /* Background color on hover for dropdown */
+}
+
+.footer {
+  background-color: #333;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Footer section containers */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+/* Footer heading */
+.footer-column h3 {
+  font-size: 20px;
+  color: #f5a623;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Footer links */
+.footer-column a {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #f5a623;
+}
+
+/* Social media icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #f5f5f5;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f5a623;
+}
+
+/* Bottom footer text */
+.footer-bottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+      text-align: center;
+  }
+}
